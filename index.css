@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0908;
+    color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.to-do-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30rem;
+    height: 25rem;
+    padding: 1rem;
+}
+
+#titulo {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.add-form {
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    color: #f8f9fa;
+    background: rgb(131,56,236);
+background: linear-gradient(90deg, rgba(131,56,236,1) 0%, rgba(255,0,110,1) 100%);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    height: 3rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+button:hover {
+    transform: translateY(-2px);
+    -webkit-box-shadow:0px 0px 15px 0px rgba(131,56,236,0.9);
+-moz-box-shadow: 0px 0px 15px 0px rgba(131,56,236,0.9);
+box-shadow: 0px 0px 15px 0px rgba(131,56,236,0.9);
+}
+
+.input-text {
+    height: 3rem;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.deleteAll-btn {
+    width: 25rem;
+    height: 3rem;
+}
+
+.hidden {
+    appearance: none;
+}
+
+.tasks-list li {
+    background: #282828;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+    margin: 10px;
+    padding: 20px 30px;
+    -webkit-box-shadow:0px 0px 17px 0px rgba(40,40,40,0.5);
+-moz-box-shadow: 0px 0px 17px 0px rgba(40,40,40,0.5);
+box-shadow: 0px 0px 17px 0px rgba(40,40,40,0.5);
+}
+  
+@media (max-width: 480px) {
+    #titulo {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    .tasks-list li {
+        width: 18rem;
+    }
+
+    .deleteAll-btn {
+        width: 18rem;
+    }
+}
